@@ -1,5 +1,0 @@
-\babel@toc {spanish}{}
-\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
-\beamer@sectionintoc {2}{Objectivos}{4}{0}{2}
-\beamer@sectionintoc {3}{Conclusiones y posibles l\IeC {\'\i }neas de trabajo futuro}{6}{0}{3}
-\beamer@sectionintoc {4}{Agradecimientos}{8}{0}{4}
