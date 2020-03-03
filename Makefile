@@ -1,18 +1,12 @@
-DOC = main
-default:	$(DOC).pdf
-
-$(DOC).pdf:	*.tex
-	pdflatex $(DOC)
-	while ( grep "Rerun to get cross-references" $(DOC).log > /dev/null ); do	\
+%.pdf:	%.tex
+	pdflatex $*
+	while ( grep "Rerun to get cross-references" $*.log > /dev/null ); do		\
 		echo '** Re-running LaTeX **';						\
-		pdflatex --interaction errorstopmode $(DOC);				\
+		pdflatex --interaction errorstopmode $*;				\
 	done
-	bibtex $(DOC)
-	pdflatex $(DOC)
-	while ( grep "Rerun to get cross-references" $(DOC).log > /dev/null ); do	\
+	bibtex $*
+	pdflatex $*
+	while ( grep "Rerun to get cross-references" $*.log > /dev/null ); do		\
 		echo '** Re-running LaTeX **';						\
-		pdflatex --interaction errorstopmode $(DOC);				\
+		pdflatex --interaction errorstopmode $*;				\
 	done
-
-clean:
-	rm -r $(DOC).aux $(DOC).bbl $(DOC).blg $(DOC).log $(DOC).out $(DOC).pdf $(DOC).toc
