@@ -10,3 +10,6 @@
 		echo '** Re-running LaTeX **';						\
 		pdflatex --interaction errorstopmode $*;				\
 	done
+
+clean:
+	rm -f $(TMPs)
