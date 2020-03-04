@@ -73,31 +73,25 @@
 En esta sección se comentarán las características del problema a resolver y los antecedentes del TFG. Las referencias bibliográficas deberían citarse de esta manera \cite{einstein1922kosmologische}.
 
 \section{Interés y objetivos}
-Básicamente, una justificación del proyecto y los objetivos que se marcan alcanzar.
+En esta sección se comentará el objetivo principal a conseguir y el por qué de estos (justificación).
 
 \section{Fases de desarrollo}
-En esta sección se comentarán las distintas fases en las que se ha dividido el trabajo a realizar.
+En esta sección se comentarán las distintas fases en las que se ha
+dividido el trabajo a realizar.
 
-A modo de ejemplo, se contemplan las siguientes unidades de trabajo
-(véase la Figura~\ref{fig:temporizacion}):
+A modo de ejemplo, se contemplan las siguientes unidades de trabajo y
+temporizaciones (véase la Figura~\ref{fig:temporizacion}):
 \begin{enumerate}
-  \item {ESTUDIO:} Estudio de transformadas, transformadas discretas,
-    codificación de sub-bandas y filtrado por paso de sub-bandas y
-    flujo óptico de imagen (60 h).
-  \item {IDENTIFICACIÓN}: Identificación y selección de bibliotecas disponibles para
-    cálculo óptico de imagen en el estado de arte actual (40 h).
-  \item {INSTALACIÓN}: Instalación y configuración de las bibliotecas en el entorno
-    de desarrollo (30h).
-  \item {DESARROLLO}: Desarrollo para el cálculo de la estimación del flujo óptico
-    de imagen (50h).
-  \item {IMPLEMENTACIÓN}: Implementación del cálculo de la estimación del flujo óptimo
-    al códec MCDWT (50h).
-  \item {EVALUACIÓN}: Evaluación y pruebas del códec MCDWT (20h).
-  \item {IMPLANTACIÓN}: Identificar limitaciones o incompatibilidades de hardware y
-    software en otros dispositivos/plataformas de las bibliotecas
-    usadas (20h).
-  \item {REDACCIÓN}: Redacción y correcciones de la memoria previas a la
-    presentación del TFM (30h).
+  \item {ANÁLISIS:} Estudio y análisis de la solución actual y de
+    otras soluciones similares, incluyendo las bibliotecas existentes
+    (50 h).
+  \item {IDENTIFICACIÓN}: Identificación de los requerimientos (50 h).
+  \item {APROVISIONAMIENTO}: Instalación y configuración del entorno
+    de desarrollo (50h).
+  \item {IMPLEMENTACIÓN}: Implementación de la solución (50h).
+  \item {EVALUACIÓN}: Evaluación de la solución, haciendo énfasis en
+    el grado de consecución de los objetivos (20h).
+  \item {REDACCIÓN}: Redacción de la memoria (30h).
 \end{enumerate}
 
 \begin{figure}
@@ -106,28 +100,32 @@ A modo de ejemplo, se contemplan las siguientes unidades de trabajo
       \begin{ganttchart}{1}{30}{10}
         \gantttitle{Bloques de 10 horas}{30} \\
         \gantttitlelist{1,...,30}{1} \\
-        \ganttbar{REV. BIB.}{1}{5} \\ % 50h
-        \ganttlinkedbar{REV. SOFT.}{6}{10} \\ % 50 h
-        \ganttlinkedbar{CONF. \& PRUEBA}{11}{15} \\ % 50 h
-        \ganttlinkedbar{BATERÍA}{16}{20} \\ % 50 h
+        \ganttbar{ANÁLISIS}{1}{5} \\ % 50h
+        \ganttlinkedbar{IDENTIFICACIÓN}{6}{10} \\ % 50 h
+        \ganttlinkedbar{APROVISIONAMIENTO}{11}{15} \\ % 50 h
+        \ganttlinkedbar{IMPLEMENTACiÓN}{16}{20} \\ % 50 h
         \ganttlinkedbar{EVALUACIÓN}{21}{25} \\ % 50 h
         \ganttlinkedbar{REDACCIÓN}{26}{30} % 50 h
       \end{ganttchart}
     }
   \end{center}
-  \caption{Temporización del trabajo.\label{fig:temporizacion}}
+  \caption{Temporización del TFG.\label{fig:temporizacion}}
 \end{figure}
 
-\section{Materiales y métodos}
-En esta sección se comentarán los diferentes materiales o herramientas y métodos o técnicas necesarias para la realización del TFG.
+%\section{Revisión bibliográfica}
+%Pues eso. Cuando sea posible, usar referencias contrastadas (artículos y libros).
 
-\section{Resultados y discusión}
+\section{Materiales y métodos}
+En esta sección se comentarán los diferentes materiales o herramientas
+y métodos o técnicas necesarias para la realización del TFG.
+
+\section{Resultados esperados}
 Los trabajos monográficos podrían perseguir objetivos relativamente
 inciertos, hipótesis a verificar, etc. Por tanto, en esta sección se
 realizará una serie de experimentos que demuestren que los objetivos
-se cumplen y en qué grado.
+se cumplen y en qué grado. Los resultados serán discutidos.
 
-\section{Conclusiones}
+\section{Conclusiones esperadas}
 Un breve resumen sobre el proyecto desarrollado.
 
 \bibliographystyle{plain}
