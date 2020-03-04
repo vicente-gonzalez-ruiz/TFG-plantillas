@@ -21,6 +21,12 @@
 
 \title{Título del Proyecto}
 \author{Nombre del Estudiante}
+\date{\begin{tabular}{c}
+    \today\\
+    \\
+    (Trabajo técnico)
+    \end{tabular}
+}
 \renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
@@ -42,12 +48,12 @@
   }
   
   \vspace{7.5cm}
-  \hspace{2cm}\resizebox{8cm}{!}{\textbf{Curso 2019/2020}}
+  \hspace{2cm}\resizebox{8cm}{!}{\textbf{Curso 2020/2021}}
   
-  \vspace{0.7cm}
-  \hspace{6cm}\resizebox{7cm}{!}{\textbf{Nombre del estudiante}}
+  \vspace{1.3cm}
+  \hspace{2.2cm}\resizebox{7cm}{!}{\textbf{Nombre del estudiante}}
   
-  \vspace{1.8cm}
+  \vspace{1.4cm}
   \hspace{10.5cm}\resizebox{7cm}{!}{\textbf{Vicente González Ruiz}}
   
   %\clearpage
@@ -59,9 +65,8 @@
 \tableofcontents
 
 \input{introduccion}
-\input{revision} % <- En caso de trabajo monográfico
-%\input{espefificaciones} % <- En caso de trabajo técnico
-\input{material_y_metodos}
+\input{objetivos_y_requerimientos} % <- En caso de trabajo técnico
+\input{materiales_y_metodos}
 \input{resultados}
 \input{conclusiones}
 
@@ -69,7 +74,7 @@
 \addcontentsline{toc}{chapter}{Bibliografía}
 \bibliography{../bibliografia}
 
-\newgeometry{top=1.0in, left=0.6in, width=15.5cm}
+\newgeometry{top=1.0in, left=0.6in, width=15.5cm, bottom=0.2in}
      
 \thispagestyle{empty}
 \tikz[remember picture,overlay] \node[opacity=1.0,inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{TFG_II_back}};
@@ -78,5 +83,7 @@
 $$\star\star\star$$
 
 \lipsum[1-2]
+
+\vspace{\fill} \hspace{2cm}\Large GRADO EN INGENIERÍA INFORMÁTICA, 2020/2021
 
 \end{document}
